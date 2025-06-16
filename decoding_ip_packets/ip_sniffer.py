@@ -36,6 +36,3 @@ def ip_header_unpack(packet):
         "destination_ip": dst_ip
     }
 
-def start_sniffer():
-    try:
-        # AF_INET для IPv4, SOCK_RAW для
