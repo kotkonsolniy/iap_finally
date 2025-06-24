@@ -20,7 +20,8 @@ class IP(Structure):
     def __new__(cls, socket_buffer=None):
         return cls.from_buffer_copy(socket_buffer)
 
-    def __init__(selfdelf, socket_buffer=None):
+    def __init__(self, socket_buffer=None):
         # human readable IP addresses
         self.scr_address = socket.inet_ntoa(struct.pack("<L", self.scr))
-        self.dst_address = socket.inet_ntoa(struct.pack("<L", self.dst))
+        self.dst_address = socket.inet_ntoa(struct.pack("<L", self.dst))\
+

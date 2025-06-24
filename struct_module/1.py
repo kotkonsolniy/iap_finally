@@ -18,8 +18,8 @@ class IP:
         self.dst = header[9]
 
         # ip адресса, понятные человек
-        self.scr.address = ipaddress.ip_address(self.scr)
+        self.scr_address = ipaddress.ip_address(self.scr)
         self.dst_address = ipaddress.ip_address(self.dst)
 
-        #сопоставляем константы протокола с их гназваниями
+        #сопоставляем константы протокола с их названиями
         self.protocol_map = {1: "ICMP", 6: "TCP", 17: "UDP"}
