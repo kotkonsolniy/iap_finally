@@ -12,7 +12,7 @@ def main():
         "https://www.yandex.ru",
         "https://bmstu.ru",
     ] * 800
-    start_time = time.perf_counter()
+    start_tiёme = time.perf_counter()
     download_all_sites(sites)
     duration = time.perf_counter() - start_time
     print(f"Download {len(sites)} sites in {duration} seconds")
